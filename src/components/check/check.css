@@ -1,0 +1,81 @@
+.check {
+    --bg-soft: hsl(243, 100%, 62%, 0.05);
+    --bg-hard: hsl(243, 100%, 62%);
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: 1px solid var(--cl-gy-500);
+    position: relative;
+}
+
+.check:hover {
+    cursor: pointer;
+    border-color: var(--cl-be-500);
+}
+
+.check__input,
+.check__aside {
+    position: relative;
+    z-index: 2000;
+}
+
+.check__input {
+    --width: 18px;
+    --check: url(
+        "../../assets/images/icon-checkmark.svg"
+    );
+    -webkit-appearance: none;
+    appearance: none;
+    width: var(--width);
+    aspect-ratio: 1;
+    margin-right: 1em;
+    border: 1px solid var(--cl-gy-500);
+    border-radius: 4px;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.check__aside {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.check__cover {
+    --bs: 0 0 0 0.5px var(--bg-hard);
+    position: absolute;
+    inset: 0;
+    background-color: var(--bg-soft);
+    z-index: 1000;
+    display: none;
+    box-shadow: var(--bs);
+    border-radius: 5px;
+}
+
+.check__lead {
+    color: var(--cl-be-900);
+    margin-bottom: 0.2em;
+}
+
+.check__para {
+    color: var(--cl-gy-700);
+}
+
+.check__price {
+    color: var(--cl-be-500);
+}
+
+.check__input:checked {
+    border-color: transparent;
+    background-color: var(--cl-be-500);
+    background-image: var(--check);
+}
+
+.check__input:checked ~
+.check__cover {
+    display: block;
+}

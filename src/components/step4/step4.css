@@ -1,0 +1,57 @@
+.step4__info {
+    padding: 1em;
+    background-color: var(--cl-we-500);
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.step4__plan,
+.step4__tool,
+.step4__cost {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.step4__plan {
+    margin-bottom: 0.2em;
+}
+
+.step4__tool {
+    margin-bottom: 0.5em;
+}
+
+.step4__cost {
+    padding: 1em;
+}
+
+.step4__line {
+    margin: 1.5em 0;
+}
+
+.step4__plan-name,
+.step4__plan-cost {
+    color: var(--cl-be-900);
+}
+
+.step4__plan-link {
+    color: var(--cl-gy-700);
+    text-decoration: underline;
+}
+
+.step4__tool-name {
+    color: var(--cl-gy-700);
+}
+
+.step4__tool-cost {
+    color: var(--cl-be-900);
+}
+
+.step4__cost-info {
+    color: var(--cl-gy-700);
+}
+
+.step4__cost-unit {
+    color: var(--cl-be-500);
+    font-size: var(--fs-lg);
+    font-weight: 500;
+}

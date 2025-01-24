@@ -1,0 +1,45 @@
+.step1__form-field {
+    margin-bottom: 1.0em;
+    position: relative;
+}
+
+.step1__form-label,
+.step1__form-input {
+    display: block;
+    width: 100%;
+}
+
+.step1__form-label {
+    margin-bottom: 0.25em;
+    color: var(--cl-be-900);
+    font-size: var(--fs-sm);
+}
+
+.step1__form-input {
+    border: 1px solid var(--cl-gy-500);
+    border-radius: 8px;
+    padding: 0.8em 1em;
+    color: var(--cl-be-900);
+}
+
+.step1__form-error {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--cl-rd-500);
+    font-size: var(--fs-sm);
+}
+
+.step1__form-input:hover {
+    border-color: var(--cl-be-500);
+}
+
+.typo .step1__form-input {
+    border-color: var(--cl-rd-500);
+}
+
+.typo .step1__form-error {
+    color: var(--cl-rd-500);
+    display: block;
+}

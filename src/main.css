@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Ubuntu";
+    font-weight: 400;
+    src: url("./assets/glyphs/400.ttf");
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    font-weight: 500;
+    src: url("./assets/glyphs/500.ttf");
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    font-weight: 700;
+    src: url("./assets/glyphs/700.ttf");
+}
+
+:root {
+    /* --cl-[type]-[number] */
+    --cl-be-900: #02295a;
+    --cl-be-500: #473dff;
+    --cl-be-400: #adbeff;
+    --cl-be-300: #bfe2fd;
+    --cl-rd-500: #ed3548;
+
+    --cl-gy-700: #9699ab;
+    --cl-gy-500: #d6d9e6;
+    --cl-we-500: #f0f6ff;
+    --cl-we-400: #fafbff;
+    --cl-we-100: #ffffff;
+    
+    --fs-sm: 0.875rem;
+    --fs-md: 1.000rem;
+    --fs-lg: 1.125rem;
+    --fs-xl: 1.625rem;
+
+    /* --bp-[size] */
+    --bp-sm: 36em;
+    --bp-lg: 48em;
+
+    /* --bg-[size] */
+    --bg-lg: url("./assets/images/bg-sidebar-desktop.svg");
+    --bg-sm: url("./assets/images/bg-sidebar-mobile.svg");
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: var(--fs-md);
+    font-family: "Ubuntu", sans-serif;
+}
+
+input,
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+::placeholder {
+    color: var(--cl-gy-700);
+    font-weight: 400;
+}
+
+/*  */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.lead {
+    font-weight: 700;
+    color: var(--cl-be-900);
+    margin-bottom: 0.5em;
+}
+
+.para {
+    color: var(--cl-gy-700);
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+
+.wrap {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+.card {
+    margin-top: -85px;
+    border-radius: 10px;
+    padding: 2em;
+    background-color: var(--cl-we-100);
+}
+
+.done {
+    color: var(--cl-we-500) !important;
+    background-color: var(--cl-be-500) !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+/*  */
+.main {
+    background-color: var(--cl-we-100);
+}
+
+.page {
+    background-color: var(--cl-we-500);
+    align-items: stretch;
+    flex-direction: column;
+}
+
+@media (min-width: 54em) {
+    .wrap {
+        width: 100%;
+        margin: 0;
+    }
+    .card {
+        border-radius: 0;
+        padding: 0;
+        background-color: auto;
+    }
+
+    /*  */
+    .main {
+        background-color: var(--cl-we-500);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .page {
+        width: 90%;
+        max-width: 864px;
+        background-color: var(--cl-we-100);
+        flex-direction: row;
+        padding: 0.8em;
+        border-radius: 10px;
+        column-gap: 1em;
+        min-height: 550px;
+    }
+}

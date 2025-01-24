@@ -1,0 +1,49 @@
+.stepbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100vh - 200px);
+}
+
+.stepbox__ctrl {
+    width: 100%;
+    background-color: var(--cl-we-100);
+    margin-top: 3em;
+}
+
+.stepbox__wrap {
+    padding: 1em 0;
+    justify-content: space-between;
+}
+
+.stepbox__btn {
+    padding: 0.8em 1em;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+.stepbox__btn--none {
+    color: var(--cl-gy-700);
+    background-color: auto;
+}
+
+.stepbox__btn--auto {
+    color: var(--cl-we-500);
+    background-color: var(--cl-be-900);
+    margin-left: auto;
+}
+
+.stepbox__btn--none:hover {
+    color: var(--cl-be-900);
+}
+.stepbox__btn--auto:hover {
+    opacity: 0.9;
+}
+
+@media (min-width: 54em) {
+    .stepbox {
+        flex: 3;
+        padding: 0 5em;
+        padding-top: 2em;
+    }
+}

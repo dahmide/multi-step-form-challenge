@@ -1,0 +1,46 @@
+.stepend {
+    min-height: calc(100vh - 200px);
+}
+
+.stepend__icon {
+    display: block;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    width: 50px;
+    aspect-ratio: 1;
+}
+
+.stepend__lead,
+.stepend__para {
+    text-align: center;
+}
+
+.stepend__lead {
+    font-size: var(--fs-xl);
+}
+
+
+@media (min-width: 54em) {
+    .stepend {
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        /* width: 100%; */
+        align-self: center;
+        min-height: auto;
+    }
+    
+    .stepend__wrap {
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    .stepend__icon {
+        width: 70px;
+    }
+    
+    .stepend__para {
+        margin: 0 auto;
+        max-width: 450px;
+    }
+}
