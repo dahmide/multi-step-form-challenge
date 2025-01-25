@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/dahmide/multi-step-form-app-challenge)
+- Solution URL: [Github](https://github.com/dahmide/multi-step-form-challenge)
 - Live Site URL: [Vercel](https://msf-dahmide-frontendmentor.vercel.app/)
 
 ## My process
